@@ -1,0 +1,6 @@
+/* Site-specific CSS */
+
+section.content,
+footer {
+	padding: 1em;
+}

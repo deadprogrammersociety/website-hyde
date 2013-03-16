@@ -1,0 +1,22 @@
+---
+title: Test post
+description: >
+    Absolutely nothing interesting here!
+created: !!timestamp '2011-02-01 10:00:00'
+tags:
+    - test
+---
+
+{% mark image -%}
+
+![Airport]([[!!images/airport.png]])
+
+{%- endmark %}
+
+{% mark excerpt -%}
+
+This sentence is before the fold…
+
+{%- endmark %}
+
+…and this sentence is after the fold.
