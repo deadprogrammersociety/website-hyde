@@ -1,1 +1,28 @@
-Run:    fab server deployTo deploy this Website to the Raspberry Pi.
+Make sure you have virtualenv, pip, and fabric installed on your system, globally.
+On Debian/Ubuntu:
+
+    sudo apt-get install python-virtualenv python-pip python-fabric
+    
+Create a new virtualenv:
+
+    virtualenv venv
+    
+Activate it:
+
+    source venv/bin/activate
+    
+Install dependencies (including Hyde) into the virtualenv:
+
+    pip install -r requirements.txt
+    
+Now, you can develop/add posts/etc. To regenerate the Website:
+
+    fab hyde_gen
+    
+To serve it locally on your system for testing, run:
+
+    hyde serve
+    
+To deploy to the Raspberry Pi (assuming you have SSH setup for keyless login:
+
+    fab server deploy
