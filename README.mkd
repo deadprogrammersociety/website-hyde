@@ -1,3 +1,5 @@
+== Setup & Deployment ==
+
 Make sure you have virtualenv, pip, and fabric installed on your system, globally.
 On Debian/Ubuntu:
 
@@ -26,3 +28,7 @@ To serve it locally on your system for testing, run:
 To deploy to the Raspberry Pi (assuming you have SSH setup for keyless login:
 
     fab server deploy
+
+== To-do ==
+
+ * [GitHub Timeline Widget](https://github.com/jmealo/github-timeline-widget) — JavaScript widget that displays latest GitHub activity
